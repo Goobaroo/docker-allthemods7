@@ -2,9 +2,9 @@
 
 FROM openjdk:17-buster
 
-LABEL version="1.0.4"
+LABEL version="1.0.3"
 LABEL homepage.group=Minecraft
-LABEL homepage.name="ATM7-1.0.4"
+LABEL homepage.name="ATM7-1.0.3"
 LABEL homepage.icon="https://media.forgecdn.net/avatars/391/574/637584581193129752.jpeg"
 LABEL homepage.widget.type=minecraft
 LABEL homepage.widget.url=udp://AllTheMods7:25565
