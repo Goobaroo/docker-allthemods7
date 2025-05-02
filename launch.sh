@@ -11,12 +11,12 @@ else
 	exit 99
 fi
 
-if ! [[ -f 'ATM7-1.0.2-server.zip' ]]; then
+if ! [[ -f 'ATM7-1.0.4-server.zip' ]]; then
 	rm -fr defaultconfigs config kubejs libraries mods Simple.zip forge*.jar
-	curl -Lo 'ATM7-1.0.2-server.zip' 'https://edge.forgecdn.net/files/4727/259/ATM7-1.0.2-server.zip' && unzip -u -o 'ATM7-1.0.2-server.zip' -d /data
-	if [[ -d $(echo ATM7-1.0.2-server.zip | sed 's/.zip//') ]]; then
-		mv -f $(echo ATM7-1.0.2-server.zip | sed 's/.zip//')/* /data
-		rm -fr $(echo ATM7-1.0.2-server.zip | sed 's/.zip//')
+	curl -Lo 'ATM7-1.0.4-server.zip' 'https://edge.forgecdn.net/files/5199/628/ATM7-1.0.4-server.zip' && unzip -u -o 'ATM7-1.0.4-server.zip' -d /data
+	if [[ -d $(echo ATM7-1.0.4-server.zip | sed 's/.zip//') ]]; then
+		mv -f $(echo ATM7-1.0.4-server.zip | sed 's/.zip//')/* /data
+		rm -fr $(echo ATM7-1.0.4-server.zip | sed 's/.zip//')
 	fi
 	java -jar $(ls forge-*-installer.jar) --installServer
 fi
